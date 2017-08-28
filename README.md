@@ -1,2 +1,2 @@
 # ITITS
-Security in Computing Course.
+Security in Computing course.
