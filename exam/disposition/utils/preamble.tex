@@ -1,7 +1,7 @@
 \documentclass[
 	10pt,
 	a4paper,
-]{report}
+]{article}
 
 % Random text
 \usepackage{blindtext}
@@ -51,13 +51,13 @@
 
 % Page margins
 \usepackage{geometry}
-\geometry{
-	a4paper,
-	left 	= 3cm,
-	right 	= 3cm,
-	top 	= 4cm,
-	bottom 	= 4cm
-}
+\geometry{a4paper, left	= 3cm, right = 3cm, top = 4cm,bottom = 4cm}
+
+% Getting name of currect section with \currentname
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
 
 % Enable \today
 \usepackage{datetime}

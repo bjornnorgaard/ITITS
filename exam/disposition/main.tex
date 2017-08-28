@@ -4,21 +4,43 @@
 \renewcommand{\headrulewidth}{1pt} % Header line thickness
 \renewcommand{\footrulewidth}{0pt} % Footer line thickness
 % Header 
-\lhead{Left head}   \chead{\LaTeX template}     \rhead{\today}
+\lhead{ITITS}   \chead{IT Sikkerhed - Disposition}     \rhead{\today}
 % Footer 
 \lfoot{}            \cfoot{}                    \rfoot{\thepage}
 
 \begin{document}
     \pagenumbering{Roman}    
     \input{utils/titlepage}
-    %\input{utils/contents}
+    \input{utils/contents}
     \pagenumbering{arabic}
 
 	% Chapter for testing
 	%\input{docs/demo/main}
 
 	% Chapters begin
-	%\input{docs/spm1/main}\newpage
-	% Chapters end
+	\input{docs/chapter/main}\newpage
 	
+	%% Kendskab til sikkerhedsstandarder og lovgivning i relation til IT-sikkerhed
+	\input{docs/standards/main}\newpage
+	\input{docs/legislation/main}\newpage
+	
+	%% Beskrive de vigtigste sikkerhedsrisici inden for sikre it-systemer,
+	\input{docs/risks/main}\newpage
+	
+	%% Beskrive de vigtigste begreber og værktøjer inden for kryptologi
+	\input{docs/cryptography/main}\newpage
+	
+	%% Anvende kodebiblioteker og værktøjer til at sikre fortrolighed, integritet og tilgængelighed af data
+	\input{docs/libraries/main}\newpage
+	\input{docs/confidentiality/main}\newpage
+	\input{docs/integritet/main}\newpage
+	\input{docs/accessibility/main}\newpage
+	
+	%% Analysere konkrete brugsscenarier og identificere de vigtigste sikkerhedsrisici
+	\input{docs/analysis/main}\newpage
+	\input{docs/identify/main}\newpage
+	
+	%% Sammenligne og evaluere forskellige begreber og teknikkers anvendelighed til løsning af konkrete sikkerhedsproblemer
+	\input{docs/evaluate/main}\newpage
+	% Chapters end	
 \end{document}
