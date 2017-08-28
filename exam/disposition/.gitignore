@@ -27,3 +27,5 @@
 *.glsdefs
 *.mtc*
 *.maf
+*.nav
+*.snm
