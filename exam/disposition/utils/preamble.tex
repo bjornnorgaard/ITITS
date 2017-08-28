@@ -1,0 +1,92 @@
+\documentclass[
+	10pt,
+	a4paper,
+]{report}
+
+% Random text
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+% Making fancy header and footers
+\usepackage{fancyhdr}
+
+% Danish letters
+\usepackage[utf8]{inputenc}
+
+% Reset footnote counter on new page
+\usepackage[bottom, perpage]{footmisc}
+
+% Math symbols
+\usepackage{amssymb}
+
+% For coloring \ref{}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
+% Dots in Content
+\usepackage{tocloft}
+
+% Enable \todo{<task>}
+\usepackage{todonotes}
+
+% Adds Bibliography section to Contents
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+% For Glossaries and addes them to Contents
+\usepackage[toc]{glossaries}
+
+% Insert PDF as page
+\usepackage{pdfpages}
+
+% For pretty tables
+\usepackage{booktabs}
+\usepackage{tabu}
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
+
+% Page margins
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left 	= 3cm,
+	right 	= 3cm,
+	top 	= 4cm,
+	bottom 	= 4cm
+}
+
+% Enable \today
+\usepackage{datetime}
+
+% Enables \url{}
+\usepackage{url}
+
+% For translating document tag titles like 'Indholdsfortegnelse'
+% instead of 'Contents', used below
+\usepackage[english]{babel}
+\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
+\addto\captionsenglish{\renewcommand{\bibname}{Litteraturliste}}
+%\addto\captionsenglish{\renewcommand{\mtctitle}{Kapitel indhold}}
+
+% For removing "Chapter X" from chapter headings
+\usepackage{titlesec}
+\titleformat{\chapter}{\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+
+% Increase rowspacing
+\addtolength{\jot}{1em}
+
+% Unknow packages
+\usepackage[pages=some]{background}
+\usepackage{subcaption}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{float}

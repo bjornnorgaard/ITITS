@@ -1,0 +1,24 @@
+\input{utils/preamble}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt} % Header line thickness
+\renewcommand{\footrulewidth}{0pt} % Footer line thickness
+% Header 
+\lhead{Left head}   \chead{\LaTeX template}     \rhead{\today}
+% Footer 
+\lfoot{}            \cfoot{}                    \rfoot{\thepage}
+
+\begin{document}
+    \pagenumbering{Roman}    
+    \input{utils/titlepage}
+    %\input{utils/contents}
+    \pagenumbering{arabic}
+
+	% Chapter for testing
+	%\input{docs/demo/main}
+
+	% Chapters begin
+	%\input{docs/spm1/main}\newpage
+	% Chapters end
+	
+\end{document}

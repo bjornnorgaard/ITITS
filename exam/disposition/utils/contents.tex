@@ -1,0 +1,35 @@
+% Depth of Contents
+\setcounter{tocdepth}{2}
+
+% Links in text are red, but Contents links
+% should remain black text.
+\hypersetup{
+	colorlinks,
+	linkcolor={},
+}
+
+% Colors on links and refs
+\hypersetup{
+	colorlinks,
+	linkcolor={black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
+% Comment this line before release
+%\listoftodos
+
+% Select list to display
+\tableofcontents
+%\listoffigures
+%\lstlistoflistings
+%\listoftables
+
+% Removed pagenumbers from Contents
+\thispagestyle{empty}
+
+% Clears rest of page
+\cleardoublepage
+
+% Resets pagecounter after preamble
+\setcounter{page}{1}
