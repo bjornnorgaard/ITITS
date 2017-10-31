@@ -1,0 +1,25 @@
+C:\Users\Anders\Desktop\test - Copy\test\bin\test.dll.config
+C:\Users\Anders\Desktop\test - Copy\test\bin\test.dll
+C:\Users\Anders\Desktop\test - Copy\test\bin\test.pdb
+C:\Users\Anders\Desktop\test - Copy\test\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Anders\Desktop\test - Copy\test\bin\Newtonsoft.Json.dll
+C:\Users\Anders\Desktop\test - Copy\test\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Anders\Desktop\test - Copy\test\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Anders\Desktop\test - Copy\test\bin\Newtonsoft.Json.xml
+C:\Users\Anders\Desktop\test - Copy\test\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Anders\Desktop\test - Copy\test\obj\Debug\WebSec.csprojResolveAssemblyReference.cache
+C:\Users\Anders\Desktop\test - Copy\test\obj\Debug\test.dll
+C:\Users\Anders\Desktop\test - Copy\test\obj\Debug\test.pdb
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\test.dll.config
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\test.dll
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\test.pdb
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\Newtonsoft.Json.dll
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\Newtonsoft.Json.xml
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\obj\Debug\test.dll
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\obj\Debug\test.pdb
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\test.dll.CodeAnalysisLog.xml
+C:\Users\Norgaard\Documents\Git\ITITS\labs\websec\test\bin\test.dll.lastcodeanalysissucceeded

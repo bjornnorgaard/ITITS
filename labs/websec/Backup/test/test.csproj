@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="MySql.Data">
+      <HintPath>MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin">
+      <HintPath>MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>MySql.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XSRF_files\bootstrap-alert.js" />
+    <Content Include="XSRF_files\bootstrap-button.js" />
+    <Content Include="XSRF_files\bootstrap-carousel.js" />
+    <Content Include="XSRF_files\bootstrap-collapse.js" />
+    <Content Include="XSRF_files\bootstrap-dropdown.js" />
+    <Content Include="XSRF_files\bootstrap-modal.js" />
+    <Content Include="XSRF_files\bootstrap-popover.js" />
+    <Content Include="XSRF_files\bootstrap-scrollspy.js" />
+    <Content Include="XSRF_files\bootstrap-tab.js" />
+    <Content Include="XSRF_files\bootstrap-tooltip.js" />
+    <Content Include="XSRF_files\bootstrap-transition.js" />
+    <Content Include="XSRF_files\bootstrap-typeahead.js" />
+    <Content Include="XSRF_files\bootstrap.css" />
+    <Content Include="XSRF_files\jquery.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-alert.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-button.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-carousel.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-collapse.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-dropdown.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-modal.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-popover.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-scrollspy.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-tab.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-tooltip.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-transition.js" />
+    <Content Include="Bootstrap, from Twitter_files\bootstrap-typeahead.js" />
+    <Content Include="Bootstrap, from Twitter_files\jquery.js" />
+    <Content Include="Google Analytics_files\analytics-ltr_1.css" />
+    <Content Include="Google Analytics_files\analytics-ltr_2.css" />
+    <Content Include="Google Analytics_files\analytics-ltr_3.css" />
+    <Content Include="Google Analytics_files\analytics__da.js" />
+    <Content Include="Google Analytics_files\dc.js" />
+    <Content Include="Google Analytics_files\default+da.I.js" />
+    <Content Include="Google Analytics_files\default+da.css" />
+    <Content Include="Google Analytics_files\plusone-32.png" />
+    <Content Include="Google Analytics_files\receng.js" />
+    <Content Include="Google Analytics_files\recommendations.js" />
+    <Content Include="Google Analytics_files\styles.css" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Wordpress.aspx_files\colors-fresh.css" />
+    <Content Include="Wordpress.aspx_files\wordpress-logo.png" />
+    <Content Include="Wordpress.aspx_files\wp-admin.css" />
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
+    <Content Include="bankpost.htm" />
+    <Content Include="success.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="outline.htm" />
+    <Content Include="NameServer.aspx" />
+    <Content Include="DkHost.aspx" />
+    <Content Include="DK Hostmaster A S  Kontrol af navneserveropsætning.htm" />
+    <Content Include="clickjacking.html" />
+    <Content Include="rfblog.htm" />
+    <Content Include="SavedAnalytics.aspx" />
+    <Content Include="deletemessage.jpg" />
+    <Content Include="video.jpg" />
+    <Content Include="xsrfframe.htm" />
+    <Content Include="AnalyticsLogin.aspx" />
+    <Content Include="bootstrap.css" />
+    <Content Include="meeting.jpg" />
+    <Content Include="dkhost\Forside_006.jpg" />
+    <Content Include="dkhost\Forside_007.jpg" />
+    <Content Include="dkhost\email.gif" />
+    <Content Include="dkhost\font_11px.css" />
+    <Content Include="dkhost\font_12px.css" />
+    <Content Include="dkhost\font_13px.css" />
+    <Content Include="dkhost\global.js" />
+    <Content Include="dkhost\inc_small_login_box.htm" />
+    <Content Include="dkhost\javascript_0b12553063.js" />
+    <Content Include="dkhost\jquery.js" />
+    <Content Include="dkhost\logo.gif" />
+    <Content Include="dkhost\logo_02.gif" />
+    <Content Include="dkhost\ny_print.css" />
+    <Content Include="dkhost\printer_icon.gif" />
+    <Content Include="dkhost\styles.css" />
+    <Content Include="dkhost\stylesheet_0f6c5c384c.css" />
+    <Content Include="dkhost\velkommen.jpg" />
+    <Content Include="machine.config" />
+    <Content Include="Wordpress.aspx" />
+    <Content Include="en.png" />
+    <Content Include="Analytics.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="flag.js" />
+    <Content Include="shop.aspx" />
+    <Content Include="laptop.jpg" />
+    <Content Include="buy.aspx" />
+    <Content Include="xkcd-Exploits-of-a-Mom.png" />
+    <Content Include="Xxe.aspx" />
+    <Content Include="xsrfframe2.htm" />
+    <Content Include="resetPassword.aspx" />
+    <Content Include="clickjackingdeleted.aspx" />
+    <Content Include="easyshop.aspx" />
+    <Content Include="dnsrebinding.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XSRF_files\.DS_Store" />
+    <None Include="Google Analytics_files\jsapi" />
+    <None Include="Google Analytics_files\saved_resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XSRF_files\" />
+    <Folder Include="Bootstrap, from Twitter_files\" />
+    <Folder Include="Google Analytics_files\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Styles\" />
+    <Folder Include="Wordpress.aspx_files\" />
+    <Folder Include="dkhost\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Analytics.aspx.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DkHost.aspx.cs">
+      <DependentUpon>DkHost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticsLogin.aspx.cs">
+      <DependentUpon>AnalyticsLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NameServer.aspx.cs">
+      <DependentUpon>NameServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SavedAnalytics.aspx.cs">
+      <DependentUpon>SavedAnalytics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wordpress2.aspx.cs">
+      <DependentUpon>Wordpress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wordpress2.aspx.designer.cs">
+      <DependentUpon>Wordpress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xxe.aspx.cs">
+      <DependentUpon>Xxe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clickjackingdeleted.aspx.cs">
+      <DependentUpon>clickjackingdeleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="easyshop.aspx.cs">
+      <DependentUpon>easyshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>A3-Cross Site Scripting</title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+
+    <script src="A3.js"></script>
+</head>
+<body>
+    <h1>A3-Cross Site Scripting</h1>
+
+    <h2>Demo</h2>
+
+    <h3>binding</h3>
+    <div ng-controller="BindingController as vm">
+        <table border="1">
+            <tr>
+                <td>expression</td>
+                <td>{{ vm.untrusted }}</td>
+            </tr>
+            <tr>
+                <td>ng-bind</td>
+                <td><span ng-bind="vm.untrusted"></span></td>
+            </tr>
+
+            <tr>
+                <td>ng-bind trusted</td>
+                <td><span ng-bind="vm.trusted"></span></td>
+            </tr>
+            <tr>
+                <td>w/ ng-non-bindable</td>
+                <td><span ng-non-bindable>{{ vm.untrusted }}</span></td>
+            </tr>
+            <tr>
+                <td>w/ $sanitize</td>
+                <td>{{ vm.sanitized }}</td>
+            </tr>
+            <tr>
+                <td>w/ ng-bind-html</td>
+                <td><span ng-bind-html="vm.untrusted"></span></td>
+            </tr>
+            <tr>
+                <td>w/ $sanitize &amp; ng-bind-html</td>
+                <td><span ng-bind-html="vm.sanitized"></span></td>
+            </tr>
+            <tr>
+                <td>w/ $sce.trustAsHtml &amp; ng-bind-html</td>
+                <td><span ng-bind-html="vm.trusted"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <h3>translate</h3>
+    <div ng-controller="TranslateController as vm">
+        <div ng-bind-html="'GREETING' | translate:vm.parameters | trust"></div>
+        <hr>
+        <div ng-bind-html="'GREETING' | translate:vm.parameters"></div>
+        <hr>
+        <div ng-bind="'GREETING' | translate:vm.parameters"></div>
+        <hr>
+        <div ng-bind-html="'GREETINGX' | translate:{name:'Kevin'}"></div>
+    </div>
+</body>
+</html>

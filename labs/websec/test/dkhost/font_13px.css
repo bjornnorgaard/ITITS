@@ -1,0 +1,8 @@
+/*S�tter fontst�rrelsen til 13px*/
+body {font-size: 16px;}
+p {font: 15px arial,sans-serif; line-height: 16px; margin: 0 0 10px;}
+h2{font: bold 17px arial,sans-serif; margin: 3px 0;}
+h3{font: bold 16px arial,sans-serif;}
+span.date{color:#52718C; font-weight:bold;}
+dl,dt{padding:0; margin:0;}
+td,th,dd,dt,li {font: 15px arial,sans-serif; line-height: 16px;}

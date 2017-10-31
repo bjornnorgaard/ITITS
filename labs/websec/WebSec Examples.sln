@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F36998A0-9426-4138-B6E5-F46987C2666C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSec", "test\WebSec.csproj", "{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{85F0C6BE-98CC-4D27-991E-A9F872384B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219CF356-2E6F-44E6-8BBD-9D09BAA73F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F0C6BE-98CC-4D27-991E-A9F872384B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F0C6BE-98CC-4D27-991E-A9F872384B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F0C6BE-98CC-4D27-991E-A9F872384B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F0C6BE-98CC-4D27-991E-A9F872384B42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = test\test.csproj
+	EndGlobalSection
+EndGlobal

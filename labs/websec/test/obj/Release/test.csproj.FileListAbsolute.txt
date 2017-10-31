@@ -1,0 +1,12 @@
+C:\Users\Anders\Desktop\test\test\bin\test.dll.config
+C:\Users\Anders\Desktop\test\test\bin\test.dll
+C:\Users\Anders\Desktop\test\test\bin\test.pdb
+C:\Users\Anders\Desktop\test\test\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Anders\Desktop\test\test\bin\Newtonsoft.Json.dll
+C:\Users\Anders\Desktop\test\test\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Anders\Desktop\test\test\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Anders\Desktop\test\test\bin\Newtonsoft.Json.xml
+C:\Users\Anders\Desktop\test\test\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Anders\Desktop\test\test\obj\Release\test.csprojResolveAssemblyReference.cache
+C:\Users\Anders\Desktop\test\test\obj\Release\test.dll
+C:\Users\Anders\Desktop\test\test\obj\Release\test.pdb

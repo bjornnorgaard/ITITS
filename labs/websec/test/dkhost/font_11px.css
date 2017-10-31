@@ -1,0 +1,8 @@
+/*Sætter fontstørrelsen til 11px*/
+body {font-size:11px;}
+p {font: 11px arial,sans-serif; line-height: 16px; margin: 0 0 10px;}
+h2{font: bold 13px arial,sans-serif; margin: 3px 0;}
+h3{font: bold 12px arial,sans-serif;}
+span.date{color:#52718C; font-weight:bold;}
+dl,dt{padding:0; margin:0;}
+td,th,dd,dt,li {font: 11px arial,sans-serif; line-height: 16px;}
