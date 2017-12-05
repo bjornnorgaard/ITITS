@@ -1,0 +1,119 @@
+body{background-color:#ffffff;margin: 0; padding: 0; font-family: Verdana, Arial, Helvetica, sans-serif;color: #000;}
+
+p {font-size: 10pt; line-height:1.4; font-family:Verdana, Arial, Helvetica, sans-serif; padding: 0; margin: 0 0 7px; color: #000;}
+h1 {font-size:15pt; font-wight: bold; line-height:1.4; font-family:"Trebuchet MS", Arial, Verdana, sans-serif; padding: 6px 0 2px; margin: 0;}
+h2 {font-size:13pt; font-wight: bold; line-height:1.4; font-family:Arial, Verdana, Helvetica, sans-serif; padding: 4px 0 2px; margin: 0;}
+h3 {font-size:11pt; font-wight: bold; line-height:1.4; font-family:Arial, Verdana, Helvetica, sans-serif; padding: 4px 0 2px; margin: 0;}
+h4, h5 {font-size:11pt; font-wight: bold; line-height:1.4; font-family:Arial, Verdana, Helvetica, sans-serif; padding: 0 0 2px; margin: 0; text-transform: uppercase;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {text-decoration: underline;}
+a {color:#9d1b1f; text-decoration:none;font-size: 10pt; line-height:1.4;}
+a:hover {text-decoration: underline;}
+a img {border: none;}
+ul, li{font-size: 10pt;}
+input, textarea, select { font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif;}
+hr {height: 2px; color: #000;}
+
+.nav-holder,
+.header-info span,
+#accesskeys,
+.side-bar,
+.right-column,
+#footer{display:none;}
+
+#header strong.logo {float:left; margin-left:30%;}
+.header-info ul {list-style:none; float:left; margin-top:25px;}
+#header{border-bottom: 1px solid black; height:9em; margin-bottom:10px;}
+.content-links{display:none;}
+
+div.invoice-container{
+	font-size: 14pt;
+}
+
+.invoice-heading{
+	font-size: 32pt;
+}
+.sb-invoice-heading{
+	font-size: 14pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-weight: bold;
+	text-align: left;
+
+}
+
+div.invoice-totals th{
+	font-size: 8pt;
+}
+
+.invoice-desc-periode{
+	/*font-size: 11px;*/
+	font-weight: bold;
+}
+
+.invoice-desc{
+	font-weight: normal;
+	text-align: left;
+}
+
+
+.invoice-subtotal-desc{
+	font-weight: bold;
+	text-align: right;
+	/*text-align: left;*/
+	border-top: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+}
+
+.invoice-subtotal{
+	font-weight: bold;
+	text-align: right;	
+}
+
+
+.invoice-qty{
+	text-align: center;
+}
+
+.invoice-amount{
+	text-align: right;
+}
+
+.invoice-subtotal-qty{
+	text-align: center;
+	border-top: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+}
+
+.invoice-subtotal-amount{
+	text-align: right;
+	border-top: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+}
+
+.invoice-subdesc{
+	text-align: left;
+	font-weight: bold;
+	
+}
+
+
+.invoice-col-heading{
+	/*background-color: #EAEAEA;*/
+	border: 2px solid #999999;
+	background-image:url(/fileadmin/grafik/print_grad1.gif);
+	padding: 2px 4px 2px 4px;
+	font-weight: bold;
+}
+
+.invoice-total-amount{
+	font-weight: bold;
+	border: 2px solid #999999;
+}		
+
+.invoice-total-desc{
+	font-weight: bold;
+	border: 2px solid #999999;
+}
+
+.center{
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Sikkerhed i Web-Applikationer</title>
+<style>
+body {font-family: arial;}
+h2 { padding-bottom: 0px; margin-bottom: 0px;}
+a { color: blue; }
+</style>
+</head>
+<body>
+<h1>Sikkerhed i Web-Applikationer</h1>
+
+<h2>Cross-Site Scripting</h2>
+<ul>
+<li><a href="http://www.adanishbank.com:8080/?lang=en">A bank</a></li>
+<li><a href="http://www.funnyblog.com:8080/bankpost.htm">Link to a bank</a></li><br/>
+
+<li><a href="http://www.dkhostmaster.dk:8080/NameServer.aspx">NameServer change</a></li>
+<li><a href="http://www.dkhostmaster.dk:8080/DkHost.aspx?input=trustskills.com">DK-Hostmaster</a></li><br/>
+
+<li><a href="http://www.adanishbank.com:8080/#lang=en">DOM XSS</a></li>
+</ul>
+
+<h2>XML Injection</h2>
+<ul>
+<li><a href="http://www.docsign.com:8080/Xxe.aspx">Document Signature</a></li>
+</ul>
+
+<h2>SQL Injection</h2>
+<ul>
+<li><a href="http://www.googleanalytics.com:8080/Analytics.aspx?id=1">Google Analytics with parameters (SQLi)</a></li>
+
+<li><a href="http://www.scepticalcustomer.com:8080/Wordpress.aspx">Wordpress Administration</a></li>
+</ul>
+
+<h2>Cross-Site Request Forgery</h2>
+<ul>
+<li><a href="http://www.greatshop.com:8080/easyshop.aspx">Easy shopping</a></li><br />
+<li><a href="http://www.funnyblog.com:8080/rfblog.htm">Funny blog (XSRF)</a></li>
+</ul>
+
+<h2>Clickjacking</h2>
+<ul>
+<li><a href="http://www.funnyblog.com:8080/clickjacking.html">Another funny blog (Clickjacking)</a></li></ul>
+
+
+<h2>DNS Rebinding</h2>
+<ul>
+<li><a href="http://www.anyapp.dk:8080/dnsrebinding.htm">Another application</a></li></ul>
+
+
+
+
+<h2>Mixed Recommendations</h2>
+<ul>
+<li><a href="http://www.funnyblog.com:8080/login.aspx">A bad login implementation</a></li>
+<li><a href="http://www.greatshop.com:8080/shop.aspx">A great web-shop</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/*S�tter fontst�rrelsen til 12px*/
+body {font-size: 12px;}
+.topmenu{height:2.45em;}
+.topmenu ul li:hover ul, .topmenu ul li.over ul{top:2.45em;}

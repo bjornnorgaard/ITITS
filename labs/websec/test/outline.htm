@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Sikkerhed i Web-Applikationer</title>
+<style>
+body {font-family: arial;}
+h2 { padding-bottom: 0px; margin-bottom: 0px;}
+a { color: blue; }
+</style>
+</head>
+<body>
+<h1>Sikkerhed i Web-Applikationer</h1>
+
+<h2>Cross-Site Scripting</h2>
+<ul>
+<li><a href="http://www.adanishbank.com:51091/?lang=en">A bank</a></li>
+<li><a href="http://www.funnyblog.com:51091/bankpost.htm">Link to a bank</a></li><br/>
+
+<!--<li><a href="http://www.dkhostmaster.dk:51091/NameServer.aspx">NameServer change</a></li>
+<li><a href="http://www.dkhostmaster.dk:51091/DkHost.aspx?input=trustskills.com">DK-Hostmaster</a></li><br/>
+
+<li><a href="http://www.adanishbank.com:51091/#lang=en">DOM XSS</a></li>-->
+</ul>
+
+<h2>XML Injection</h2>
+<ul>
+<li><a href="http://www.docsign.com:51091/Xxe.aspx">Document Signature</a></li>
+</ul>
+
+<h2>SQL Injection</h2>
+<ul>
+<li><a href="http://www.googleanalytics.com:51091/Analytics.aspx?id=1">Google Analytics with parameters (SQLi)</a></li>
+    <!--
+<li><a href="http://www.scepticalcustomer.com:51091/Wordpress.aspx">Wordpress Administration</a></li>-->
+</ul>
+
+<h2>Cross-Site Request Forgery</h2>
+<ul>
+<li><a href="http://www.greatshop.com:51091/easyshop.aspx">Easy shopping</a></li><br />
+<li><a href="http://www.funnyblog.com:51091/rfblog.htm">Funny blog (XSRF)</a></li>
+</ul>
+
+<h2>Clickjacking</h2>
+<ul>
+<li><a href="http://www.funnyblog.com:51091/clickjacking.html">Another funny blog (Clickjacking)</a></li></ul>
+
+    
+<h2>DNS Rebinding</h2>
+<ul>
+<li><a href="http://www.anyapp.dk:51091/dnsrebinding.htm">Another application</a></li></ul>
+        
+<h2>Mixed Recommendations</h2>
+<ul>
+<li><a href="http://www.funnyblog.com:51091/login.aspx">A bad login implementation</a></li>
+<li><a href="http://www.greatshop.com:51091/shop.aspx">A great web-shop</a></li>
+</ul>
+    
+    <h2>Encryption/Hashing</h2>
+    <ul>
+        <li><a href="http://www.itsec.com:51091/EncryptData.aspx">Encryption</a></li>
+        <li><a href="http://www.itsec.com:51091/HashData.aspx">Hashing</a></li>
+    </ul>
+
+    <h2>OWASP Top 10 in Frontend Libraries</h2>
+    <ul>
+        <li><a href="http://www.restangular.com:51091/AngularJS">XSS in AngularJS application</a></li>
+        <li><a href="http://www.restangular.com:51091/AngularJS">CSRF with XMLHttpRequest</a></li>
+    </ul>
+    <h2>JWT</h2>
+<ul>
+    <li><a href="http://www.restangular.com:51091/AngularJS">Registration, logon, logout</a></li>
+</ul>
+</body>
+</html>
