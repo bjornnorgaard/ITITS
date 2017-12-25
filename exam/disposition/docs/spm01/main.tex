@@ -67,5 +67,30 @@ Alt efter typen af angriber skal der tages forskellige forholdsregler.
 \end{itemize}
 
 \subsection{Hvad siger lovgivning og anbefalinger/standarder om opbevaring af passwords?}
+
+\subsubsection{Lovgivning}
+
+\subsubsection{Opbevaring af password}
+SHA256 or GTFO.
+
+\begin{enumerate}
+	\item Salt
+	\item Hash
+\end{enumerate}
+
 \subsection{Hvordan kan man selv implementere brugerautentikation?}
+
+\subsubsection{JSON web token}
+Base64 encoded token, som kan valideres uden at skulle holde på et \textit{state}.
+
+\begin{itemize}
+	\item Header
+	\item Payload
+	\item Signature
+\end{itemize}
+
 \subsection{Hvilke alternativer er der til selv at implementere brugerautentikation?}
+
+\begin{itemize}
+	\item .NET Identity
+\end{itemize}
