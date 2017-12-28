@@ -8,5 +8,67 @@
 	\item Samt forklar hvordan digitale signaturer anvendes og stoles på i praksis.
 \end{itemize}
 
-\subsection{Redegør for og vis eksempler på symmetrisk og asymmetrisk nøglekryptering, samt	anvendelsen af disse i digitale signaturer}
+\subsection{Redegør for og vis eksempler på symmetrisk og asymmetrisk nøglekryptering, samt anvendelsen af disse i digitale signaturer}
+Ved symmetrisk kryptering skal en nøgle deles på forhånd. Figur~\ref{fig:symmetrickeyenc} illustrerer. En fordel er at metoden er 1.000 til 10.000 gange hurtigere end asymmetrisk. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/spm5/symmetric_key_enc}
+	\caption{Symmetrisk nøglekryptering}
+	\label{fig:symmetrickeyenc}
+\end{figure}
+
+Asymmetrisk kryptering af beskrevet i Afsnit~\ref{sec:asymmetric} på Side~\pageref{sec:asymmetric}.
+
+\subsubsection{Matematikken}
+Her er \textit{C} ciphertext, \textit{P} plaintext.
+
+\begin{align}
+	C &= E(k,P)\\
+	P &= D(k,C)
+\end{align}
+
+\input{docs/crypto-primitives}
+
+\subsubsection{Anvendelse af kryptering i signature}
+Figur~\ref{fig:digital-signature} viser hvordan en digital signatur\footnote{Se \url{https://youtu.be/GSIDS_lvRv4?t=4m2s}} laves.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figs/spm5/digital-signature}
+	\caption{Hvordan en besked signeres}
+	\label{fig:digital-signature}
+\end{figure}
+
 \subsection{Samt forklar hvordan digitale signaturer anvendes og stoles på i praksis}
+En digital signatur består af:
+
+\begin{itemize}
+	\item En fil
+	\item Hvem signatures tilhører
+	\item Validering af at signaturen er ægte og ikke forfalsket
+	\item Demonstration af at filen ikke er ændret
+	\item En forbindelsen mellem signatur og filen
+\end{itemize}
+
+\subsubsection{Public key infrastructure}
+Er en række roller, politikker og procedure, som bruges til at oprette, vedligeholde og distribuere m.m. digitale certifikater.
+
+\paragraph{Elementer i PKI}
+For at hele systemet skal virke er infrastruktur med disse elementer bygget: 
+
+\subparagraph{Certification Authority (CA)} udsteder, gemmer og signere certifikater.
+
+\subparagraph{Registration Authority (RA)} ''voucher'' for identiteten af brugerne overfor en CA.
+
+\subparagraph{Repository} er en database med aktive digitale certifikater i et CA system.
+
+\subparagraph{Archive} indeholder gamle certifikater, som kan bruges i fremtidige konflikter.
+
+\subparagraph{Certificate Revocation Lists (CRLs)} holder på certifikater som er blevet ''revoked''.
+
+\subparagraph{Public key certificate} bekræfter at identiteten har de korrekte credentials.
+
+\subparagraph{PKI users} organisationer eller individer, som bruger PKI, men som ikke udsteder certifikater.
+
+\paragraph{Certificate lifecycle}

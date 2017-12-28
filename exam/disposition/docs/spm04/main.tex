@@ -8,8 +8,12 @@
 	\item Samt forklar hvordan digitale certifikater udstedes og verificeres.
 \end{itemize}
 
-\subsection{Redegør for og vis eksempler på asymmetrisk nøglekryptering, samt anvendelsen af asymmetrisk nøglekryptering på Internet}
-Figur~\ref{fig:asymmetrickeyenc} viser eksempel på asymmetrisk kryptering.
+\subsection{Redegør for og vis eksempler på asymmetrisk nøglekryptering, samt anvendelsen af asymmetrisk nøglekryptering på Internet}\label{sec:asymmetric}
+Figur~\ref{fig:asymmetrickeyenc} viser eksempel på asymmetrisk kryptering. Med asymmetrisk kryptering kan kun personen med den \textit{private nøgle} decryptere beskeden. 
+
+Svare til at sende en boks med åben hængelås ud. Alle kan lukke boksen og sende den til dig, men kun du har nøglen til at låse op.
+
+Er eksponentielt langsommere end symmetrisk kryptering.
 
 \begin{figure}[H]
 	\centering
@@ -38,6 +42,8 @@ I Ligning~\ref{eq:rsa} er \textit{n} produktet af to primtal. Tallene \textit{d}
 	Decrypted &= 2790^{413}~mod~3233 = 65
 \end{align}
 
+\input{docs/crypto-primitives}
+
 \subsubsection{Kryptering på internettet}
 TLS er opgraderingen af SSL. Disse anvendes i \textit{transport} laget af netværkskommunikation. 
 
@@ -51,7 +57,7 @@ Når et certifikat udsteder bruges flowet vist i Figur~\ref{fig:cert-issue}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.75\linewidth]{figs/spm4/cert-issue}
+	\includegraphics[width=0.8\linewidth]{figs/spm4/cert-issue}
 	\caption{Udstedelse af et certifikat.}
 	\label{fig:cert-issue}
 \end{figure}
@@ -65,4 +71,3 @@ Ved validering af certifikater bruges flowt vist i Figur~\ref{fig:cert-validate}
 	\caption{Validering af et certifikat.}
 	\label{fig:cert-validate}
 \end{figure}
-
