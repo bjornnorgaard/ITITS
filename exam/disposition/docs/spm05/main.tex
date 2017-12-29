@@ -51,24 +51,55 @@ En digital signatur består af:
 	\item En forbindelsen mellem signatur og filen
 \end{itemize}
 
-\subsubsection{Public key infrastructure}
+\subsection{Public key infrastructure}
 Er en række roller, politikker og procedure, som bruges til at oprette, vedligeholde og distribuere m.m. digitale certifikater.
 
-\paragraph{Elementer i PKI}
+\subsubsection{Elementer i PKI}
 For at hele systemet skal virke er infrastruktur med disse elementer bygget: 
 
-\subparagraph{Certification Authority (CA)} udsteder, gemmer og signere certifikater.
+\paragraph{Certification Authority (CA)} udsteder, gemmer og signere certifikater.
 
-\subparagraph{Registration Authority (RA)} ''voucher'' for identiteten af brugerne overfor en CA.
+\paragraph{Registration Authority (RA)} ''voucher'' for identiteten af brugerne overfor en CA.
 
-\subparagraph{Repository} er en database med aktive digitale certifikater i et CA system.
+\paragraph{Repository} er en database med aktive digitale certifikater i et CA system.
 
-\subparagraph{Archive} indeholder gamle certifikater, som kan bruges i fremtidige konflikter.
+\paragraph{Archive} indeholder gamle certifikater, som kan bruges i fremtidige konflikter.
 
-\subparagraph{Certificate Revocation Lists (CRLs)} holder på certifikater som er blevet ''revoked''.
+\paragraph{Certificate Revocation Lists (CRLs)} holder på certifikater som er blevet ''revoked''.
 
-\subparagraph{Public key certificate} bekræfter at identiteten har de korrekte credentials.
+\paragraph{Public key certificate} bekræfter at identiteten har de korrekte credentials.
 
-\subparagraph{PKI users} organisationer eller individer, som bruger PKI, men som ikke udsteder certifikater.
+\paragraph{PKI users} organisationer eller individer, som bruger PKI, men som ikke udsteder certifikater.
 
-\paragraph{Certificate lifecycle}
+\subsubsection{Certificate lifecycle}
+
+\begin{enumerate}
+	\item \textbf{Issuance}
+	\item \textbf{Monitor} - Expiry, Revocation status, Private key
+	\item \textbf{Renewal} - Same private key
+	\item \textbf{Revocation} - Private key compromised, certificate no longer in use
+	\item \textbf{Reissue} - Same expiry data, add/remove name in certicate
+	\item \textbf{Rekey} - New private key. Certficate revoked.
+\end{enumerate}
+
+\subsubsection{Authentication Methods}
+
+\begin{itemize}
+	\item \textbf{Domain Validated (DV)}
+	\begin{itemize}
+		\item Mail sendt til difineret alias, som admin@
+		\item Der oprettes en DNS TXT Record
+		\item Der skal ligge en fil på serveren
+	\end{itemize}
+	\item \textbf{Organisation Validated (OV)}
+	\begin{itemize}
+		\item Der skal fremsendes dokumenter fra organisationen
+		\item Man ringes op
+	\end{itemize}
+	\item \textbf{Extended Validated (EV)}
+	\begin{itemize}
+		\item Organisationsdokumenter sendes
+		\item Telefonopkald
+		\item ''Legal, physical and operatioal existence of the entity''
+	\end{itemize}
+\end{itemize}
