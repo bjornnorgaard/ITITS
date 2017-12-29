@@ -11,7 +11,61 @@
 \end{itemize}
 
 \subsection{Redegør for typiske sårbarheder og trusler relateret til netværk}
+Netværk kan være usikre på mange måder. Åbne porte og ikke-krypteret trådlås trafik er nogle.
+
 \subsection{Giv i den forbindelse en uddybende gennemgang af sikkerhedsproblematikker ved brug af WiFi}
+Hvis ikke trafikken er krypteret vil alt kunne læses af enhver der lytter. 
+
+\begin{itemize}
+	\item \textbf{Identity theft (MAC spoofing)} Angriber lytter på netværket og finder en computers MAC adresse og angriber ved at udgive sig for at være denne.
+	\item \textbf{Man-in-the-middel attacks} Angriber lavet sit eget AP og får en bruger til at logge på.
+	\item \textbf{Denial of service (DoS)} Angriber sender en masse traffik til målet.
+\end{itemize}
+
 \subsection{Forklar Denial-of-service attacks, og hvordan man kan beskytte sig mod disse}
+Et DoS angreb skal gøre en tjeneste/service utilgængelig eller dårligere for legitime brugere. Dette kan ske ved at manipulere forskellige sårbarheden, ikke kun netværk.
+
+\paragraph{Utilstrækkelige ressourcer} gør DoS angreb nemmere at udgøre og kan også resultere i DoS lignende symptomer, uden at et faktisk angreb er udført\footnote{Black Friday}.
+
+\paragraph{Public relations} kan motivere DOS angreb.
+
+\subsubsection{Typer af DoS angreb}
+
+\paragraph{DoS} bruger en enkelt forbindelse.
+
+\paragraph{DDoS} anvender flere computere eller botnets til at udføre samtidige DOS angreb.
+
+\paragraph{Amplified DDos} udnytter at ikke alle tjeneste validere indkommende request. Herved kan en angriber sende et request til en service, hvor svaradressen er målets\footnote{NTP}.
+
+\paragraph{Slow Loris} åbner mange samtidige forbindelser med serveren og vedligeholder disse med et minimum af aktivitet for at holde forbindelsen oppe.
+
+\subsubsection{Mitigation}
+DoS er svære at beskytte sig imod, nogle ting kan man dog gøre:
+
+\begin{itemize}
+	\item Højere og vildere servere.
+	\item Brug en eller flere reverse proxies for at beskytte servere og fjerne single-point-of-failure. Det kan eksempelvis være en service som CloudFlare.
+	\item Begrænse antallet af forbindelser som en IP adresse må oprette. Frasortere særlig langsom trafik eller sænke timeout tiden for requests.
+\end{itemize}
+
 \subsection{Redegør for de forskellige typer af firewalls}
+\begin{itemize}
+	\item \textbf{Standalone}
+	\begin{itemize}
+		\item ModSecurity
+		\item Wallarm
+		\item UrlScan
+	\end{itemize}
+	\item \textbf{Cloud services}
+	\begin{itemize}
+		\item CloudFlare
+		\item Sucuri
+	\end{itemize}
+	\item \textbf{Network applications}
+	\begin{itemize}
+		\item Barracuda Networks
+		\item Citrix NetScaler
+	\end{itemize}
+\end{itemize}
+
 \subsection{Forklar hvad ”Intrusion detection and prevention systems” er og hvordan de virker}
