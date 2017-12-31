@@ -69,3 +69,18 @@ DoS er svære at beskytte sig imod, nogle ting kan man dog gøre:
 \end{itemize}
 
 \subsection{Forklar hvad ”Intrusion detection and prevention systems” er og hvordan de virker}
+IDS overvåger netværk eller host på udvalgte steder. Erstatter ikke korrekt brug af autentifikation.
+
+\subsubsection{Detection}
+Overvåger og sender en advarsel hvis trusler detekteres.
+
+\paragraph{Netværk detection}
+På et netværk analysere den al trafik og matcher mod kendte sårbarheder. Herefter kan en advarsel sendes til en administrator. Dette kan have dårlige konsekvenser for performance.
+
+\paragraph{Host detection}
+Holder øje med maskiner, som regel mission kritiske da deres konfiguration ikke forventes at ændres.
+
+\subsubsection{Prevention}
+Står in-line i systemet. 
+
+Disse systemer reagere på flere måder: stopper angrebet, ændre miljøet (rekonfiguration af firewall) eller ved at ændre indholdet i pakken.
